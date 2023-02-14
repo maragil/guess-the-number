@@ -14,9 +14,10 @@
 //Actualizar el contador de intentos por cada prueba.
 
 const btn = document.querySelector('.js__button');
-const number =document.querySelector('.js__number');
+const inpNumber = document.querySelector('.js__number');
 const clue = document.querySelector('.js__clue');
 const attempsNum = document.querySelector('.js__attemps')
+
 
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
@@ -25,18 +26,29 @@ function getRandomNumber(max) {
 let randomNumber = getRandomNumber(100);//número aleatorio
     console.log('Mi número aleatorio es: ' + randomNumber);
 
-function addNumber(){
-    const numValue = parseInt(number.value);
-    return numValue;
+
+// function addNumber(){
+//     const numValue = parseInt(number.value);
+//     return numValue;
+// }
+function comparedNum(randomNumber , numValue){
+    console.log('hola' + numValue);
+    if (numValue === randomNumber){
+        clue.innerHTML = 'Has ganado campeona!!';
+    }
+    if (numValue > randomNumber){
+        clue.innerHTML = 'Demasiado alto';
+    }else{
+        clue.innerHTML = 'Demasiado bajo';
+    }
 }
 
 function handleClickButton(event){
-    event.preventDefault();
-    if (numValue > randomNumber){
-        clue.innerHTML = 'Demasiado alto';
-    }
-    console.log(numValue);
-
+        event.preventDefault;
+            const numValue = parseInt(inpNumber.value);
+            comparedNum(randomNumber , numValue);
 
 }
-btn.addEventListener('click' , handleClickButton);//evento
+
+
+btn.addEventListener("click", handleClickButton);
