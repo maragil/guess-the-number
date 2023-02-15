@@ -1,0 +1,15 @@
+.title{
+    font-size: 40px;
+}
+
+.button{
+    background-color: violet;
+    color: wheat;
+    font-weight: bold;
+    border-color: violet;
+    border-radius: 5px;
+}
+
+.input{
+    width: 50%;
+}

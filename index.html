@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>M-2. Prueba intermedia</title>
 </head>
-<body class="body">
-    <h1>Adivina el número</h1>
+<body>
+    <h1 class="title">Adivina el número</h1>
     <h3>Introduce aquí tu número:</h3>
 
-    <form action="">
-        <input type="text" class="js__number" value="">
-        <button class="js__button">Prueba</button>
-        <input type="text" name="Pista" class="js__clue" placeholder="Pista: Escribe el número y dale a Prueba">
-        <input type="text" name="Número de intentos" class="js__attemps" placeholder="Número de intentos:">
+    <form>
+        <input type="text" class=" input js__number" placeholder="Pon un número">
+        <button class=" button js__button">Prueba</button>
     </form>
+
+    <div>
+        <p>Pista: escribe el número y dale a Prueba</p>
+
+        <p>Número de intentos: <span>0</span></p>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
