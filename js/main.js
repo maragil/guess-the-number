@@ -18,12 +18,12 @@ const inpNumber = document.querySelector('.js__number');
 const attempsNum = document.querySelector('.js__attemps')
 const msj = document.querySelector('.js__msj');
 const hitNumber = document.querySelector('.js__hit');
-let hit = 0;
 let attemps = 0;
 
+//Comparador de números:
 
 function userMsj(){
-    const inputNumValue = parseInt(inpNumber.value);//no tiene valor al recargar la página
+    const inputNumValue = parseInt(inpNumber.value);//no tiene valor al recargar la página, por eso va dentro de la F
     let msjResult = "Tienes que introducir un número";
 
     if (inputNumValue === randomNumber){
@@ -34,6 +34,11 @@ function userMsj(){
         msjResult = 'Número demasiado bajo';
     }
     msj.innerHTML = msjResult;
+}
+
+function counter(){
+    attemps++
+    attempsNum.innerHTML = attemps;
 }
 
 function getRandomNumber(max) {
@@ -48,6 +53,8 @@ function handleClickButton(event){
     event.preventDefault();
 
     userMsj();
+
+    counter();
 }
 
 btn.addEventListener("click", handleClickButton);
