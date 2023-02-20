@@ -23,7 +23,7 @@ let attemps = 0;
 //Comparador de números:
 
 function userMsj(){
-    const inputNumValue = parseInt(inpNumber.value);//no tiene valor al recargar la página, por eso va dentro de la F
+    const inputNumValue = parseInt(inpNumber.value)
     let msjResult = "Tienes que introducir un número";
 
     if (inputNumValue === randomNumber){
@@ -35,6 +35,8 @@ function userMsj(){
     }
     msj.innerHTML = msjResult;
 }
+
+//Funciones:
 
 function counter(){
     attemps++
@@ -48,6 +50,7 @@ function getRandomNumber(max) {
 let randomNumber = getRandomNumber(100);//número aleatorio
     console.log('Mi número aleatorio es: ' + randomNumber);
 
+//Función manejadora.
 
 function handleClickButton(event){
     event.preventDefault();
