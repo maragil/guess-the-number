@@ -1,4 +1,4 @@
-# <a href="https://guess-the-number.maragil.com/" target="_blank" rel="noreferrer"><img src="img/signo-de-interrogacion-3d-verde.png" alt="signo de interrogación" width="40" height="40"/></a> [Adivina el número](https://guess-the-number.maragil.com/)
+# 💭 [Adivina el número](https://guess-the-number.maragil.com/)
 
 En este juego interactivo realizado con [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript), el programa selecciona un número al azar y desafía al jugador a adivinar ese número. La aplicación te indica si el 'número es demasiado bajo' o 'demasiado alto', además de contar el número de intentos que ha hecho el jugador.
 
